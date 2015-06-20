@@ -11,7 +11,7 @@
 
 In Terminal:
 
-``` 
+```
 xcode-select --install
 
 ```
@@ -22,7 +22,7 @@ xcode-select --install
 
 In Terminal:
 
-``` 
+```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ```
@@ -31,7 +31,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 In Terminal:
 
-``` 
+```
 brew doctor
 
 ```
@@ -45,35 +45,35 @@ brew doctor
 
 In Terminal:
 
-``` 
+```
 brew update
 
 ```
 
 Then, we'll use Homebrew to install rbenv:
 
-``` 
+```
 brew install rbenv rbenv-gem-rehash ruby-build
 
 ```
 
 Next, we'll make sure your $PATH has access to the rbenv command-line utility:
 
-``` 
+```
 echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 
 ```
 
 Then, we'll enable shims and autocompletion:
 
-``` 
+```
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 
 ```
 
 After that, reload your bash profile:
 
-``` 
+```
 source ~/.bash_profile
 
 ```
@@ -82,7 +82,7 @@ source ~/.bash_profile
 
 In Terminal:
 
-``` 
+```
 rbenv install 2.2.1
 
 ```
@@ -93,7 +93,7 @@ This will take a while. Don't worry if it's more than 5 minutes and it looks lik
 
 In Terminal:
 
-``` 
+```
 rbenv global 2.2.1
 
 ```
@@ -102,7 +102,7 @@ rbenv global 2.2.1
 
 In Terminal:
 
-``` 
+```
 rbenv rehash
 
 ```
@@ -113,14 +113,14 @@ rbenv rehash
 
 In Terminal:
 
-``` 
+```
 gem install rails --version=4.2.0 --no-ri --no-rdoc
 
 ```
 
 Once that's done, type:
 
-``` 
+```
 rbenv rehash
 
 ```
@@ -129,7 +129,7 @@ rbenv rehash
 
 In Terminal:
 
-``` 
+```
 ruby -v
 
 ```
@@ -138,7 +138,7 @@ You should see Ruby 2.2.1.
 
 Next, type:
 
-``` 
+```
 which ruby
 
 ```
@@ -147,7 +147,7 @@ You should see `/Users//.rbenv/shims/ruby`
 
 Next, type:
 
-``` 
+```
 rails -v
 
 ```
@@ -156,7 +156,7 @@ You should see Rails 4.2.0.
 
 Next, type:
 
-``` 
+```
 which rails
 
 ```
@@ -169,7 +169,7 @@ If any of your information looks different, please find an instructor!
 
 In Terminal:
 
-``` 
+```
 sudo nano /etc/paths
 
 ```
@@ -180,7 +180,7 @@ Enter your password when prompted.
 
 Now, we will add the path where Homebrew should install software. It is important that files here are executed before the default software installed with your Mac. So, add a line to the top of the file:
 
-``` 
+```
 /usr/local/bin
 
 ```
@@ -193,14 +193,14 @@ Press control x to exit. Press y enter when prompted to save these changes
 
 In Terminal, install the distributed version control system Git:
 
-``` 
+```
 brew install git
 
 ```
 
 Once that install is complete, type:
 
-``` 
+```
 which git
 
 ```
@@ -213,27 +213,27 @@ If you see something different, please notify an instructor.
 
 In Terminal:
 
-``` 
+```
 git config --global user.name "Your Name"
 
 ```
 
 Then, using the same email you used to sign up with Github,
 
-``` 
+```
 git config --global user.email youremail@whatever.com
 
 ```
 
 Then
 
-``` 
+```
 git config --global credential.helper cache
 ```
 
 And finally
 
-``` 
+```
 git config --global push.default simple
 ```
 
@@ -241,21 +241,21 @@ git config --global push.default simple
 
 ## Install the databases MongoDB and PostgreSQL:
 
-``` 
+```
 brew install mongodb
 
 ```
 
 Next, create the directory where our Mongo databases will be stored:
 
-``` 
+```
 mkdir -p /data/db
 
 ```
 
 Now, we need to make sure that we have the permissions needed to write data to this directory:
 
-``` 
+```
 sudo chown -R $USER /data
 
 ```
@@ -267,21 +267,21 @@ sudo chown -R $USER /data
 
 ## Install the image processing library ImageMagick (used with Paperclip for photo uploads):
 
-``` 
+```
 brew install imagemagick
 
 ```
 
 ## Install node.js
 
-``` 
+```
 brew install node
 
 ```
 
 To make sure that it was installed, run
 
-``` 
+```
 node -v
 
 ```
@@ -291,13 +291,9 @@ You should see 0.12.4.
 ## atom text editor
 
 - **Download and install Atom (http://atom.io/).** After running the downloaded file, a Finder window will open. Inside this window, drag the Atom icon into the Applications folder.
-- **Add Atom to your dock.** Press Command-Space to open Spotlight. Type Sublime, then drag the Sublime Text icon to the dock at the bottom of your screen. This allows you to easily open Sublime Text.
-
-
+- **Add Atom to your dock.** Press Command-Space to open Spotlight. Type Atom, then drag the Atom icon to the dock at the bottom of your screen. This allows you to easily open Atom.
 
 
 ## OPTIONAL
 
 - ***Install Mou.*** Mou allows you to edit and view Markdown files.
-
-
